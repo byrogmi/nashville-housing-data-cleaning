@@ -12,7 +12,7 @@ While the core project is inspired by popular portfolio tutorials, **I independe
 
 This project is based on the popular **"Data Cleaning in SQL"** tutorial by **Alex The Analyst** (Alex Freberg). However, instead of just rewriting the course code, I used the tutorial as a structural blueprint and significantly upgraded the implementation:
 
-- **Platform Migration (SQL Server ➡️ MySQL):** The original tutorial is written for Microsoft SQL Server. I independently migrated the entire pipeline to MySQL. This required replacing dialect-specific functions (like `PARSENAME`) with custom-engineered, nested string functions (`SUBSTRING_INDEX`, `LOCATE`).
+- **Platform Migration (SQL Server --> MySQL):** The original tutorial is written for Microsoft SQL Server. I independently migrated the entire pipeline to MySQL. This required replacing dialect-specific functions (like `PARSENAME`) with custom-engineered, nested string functions (`SUBSTRING_INDEX`, `LOCATE`).
 - **The Extra Mile (Granular Parsing):** While the tutorial only splits addresses into two parts, I pushed further and cleanly extracted the **House Number** into its own dedicated column—a critical step for real-world spatial analysis and geocoding.
 - **Production-Ready Architecture (VIEW over DELETE):** In the final section, the tutorial uses standard `DELETE` and `DROP COLUMN` commands. Recognizing that hard-deleting records violates data integrity rules in a production environment, I refactored the final pipeline to deploy a dynamic analytical **VIEW**. This secures the raw data while delivering a perfectly cleaned, real-time data stream.
 
