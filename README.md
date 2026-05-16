@@ -8,7 +8,7 @@ While the core project is inspired by popular portfolio tutorials, **I independe
 
 ---
 
-## 🎓 Credits & Adaptations (Why this repository is different)
+## Credits & Adaptations (Why this repository is different)
 
 This project is based on the popular **"Data Cleaning in SQL"** tutorial by **Alex The Analyst** (Alex Freberg). However, instead of just rewriting the course code, I used the tutorial as a structural blueprint and significantly upgraded the implementation:
 
